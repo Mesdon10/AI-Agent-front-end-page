@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <div className="app-container">
+            <header className="header">
+                <h1>🤖 AI Agent Research Group</h1>
+                <p>Welcome to Our Research Portal</p>
+            </header>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+            <main className="main-content">
+                <section className="intro-section">
+                    <h2>About Our Research</h2>
+                    <p>
+                        We are dedicated to advancing the field of AI agents through
+                        innovative research and practical applications.
+                    </p>
+                </section>
+
+                <section className="features-section">
+                    <h2>Research Areas</h2>
+                    <div className="feature-grid">
+                        <div className="feature-card">
+                            <h3>🧠 Multi-Agent Systems</h3>
+                            <p>Exploring collaboration between AI agents</p>
+                        </div>
+                        <div className="feature-card">
+                            <h3>🎯 Decision Making</h3>
+                            <p>Advanced algorithms for intelligent decisions</p>
+                        </div>
+                        <div className="feature-card">
+                            <h3>🔬 Applied Research</h3>
+                            <p>Real-world applications and solutions</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer className="footer">
+                <p>© 2025 AI Agent Research Group | CUHK</p>
+            </footer>
+        </div>
+    )
 }
 
 export default App
