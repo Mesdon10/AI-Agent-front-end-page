@@ -1,12 +1,12 @@
 import './App.css'
+import Header from './components/Header'
+import FeatureCard from './components/FeatureCard'
+import Footer from './components/Footer'
 
 function App() {
     return (
         <div className="app-container">
-            <header className="header">
-                <h1>🤖 AI Agent Research Group</h1>
-                <p>Welcome to Our Research Portal</p>
-            </header>
+            <Header />
 
             <main className="main-content">
                 <section className="intro-section">
@@ -20,25 +20,31 @@ function App() {
                 <section className="features-section">
                     <h2>Research Areas</h2>
                     <div className="feature-grid">
-                        <div className="feature-card">
-                            <h3>🧠 Multi-Agent Systems</h3>
-                            <p>Exploring collaboration between AI agents</p>
-                        </div>
-                        <div className="feature-card">
-                            <h3>🎯 Decision Making</h3>
-                            <p>Advanced algorithms for intelligent decisions</p>
-                        </div>
-                        <div className="feature-card">
-                            <h3>🔬 Applied Research</h3>
-                            <p>Real-world applications and solutions</p>
-                        </div>
+                        <FeatureCard
+                            icon="🧠"
+                            title="Multi-Agent Systems"
+                            description="Exploring collaboration between AI agents"
+                        />
+                        <FeatureCard
+                            icon="🎯"
+                            title="Decision Making"
+                            description="Advanced algorithms for intelligent decisions"
+                        />
+                        <FeatureCard
+                            icon="🔬"
+                            title="Applied Research"
+                            description="Real-world applications and solutions"
+                        />
+                        <FeatureCard
+                            icon="🚀"
+                            title="Innovation Lab"
+                            description="Pushing the boundaries of AI technology"
+                        />
                     </div>
                 </section>
             </main>
 
-            <footer className="footer">
-                <p>© 2025 AI Agent Research Group | CUHK</p>
-            </footer>
+            <Footer />
         </div>
     )
 }
