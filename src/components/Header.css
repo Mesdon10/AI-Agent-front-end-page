@@ -3,7 +3,7 @@
     padding: 4rem 5% 3rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    wider: 100%;
+    width: 100%;
 }
 
 .header h1 {
