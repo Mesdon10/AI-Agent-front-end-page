@@ -1,8 +1,9 @@
 .header {
     text-align: center;
-    padding: 4rem 2rem 3rem;
+    padding: 4rem 5% 3rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    wider: 100%;
 }
 
 .header h1 {
@@ -18,6 +19,10 @@
 
 /* 响应式 */
 @media (max-width: 768px) {
+    .header {
+        padding: 3rem 5% 2rem;
+    }
+
     .header h1 {
         font-size: 2rem;
     }

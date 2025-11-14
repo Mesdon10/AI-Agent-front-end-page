@@ -19,6 +19,19 @@ function Team() {
             name: "Your Name",
             role: "MSc Student",
             emoji: "👨‍💻"
+        },
+        // 添加新成员，只需复制粘贴并修改内容
+        {
+            id: 4,
+            name: "Another Member",
+            role: "Research Assistant",
+            emoji: "👩‍🔬"
+        },
+        {
+            id: 5,
+            name: "New Member",
+            role: "Visiting Scholar",
+            emoji: "👨‍🎓"
         }
     ]
 
