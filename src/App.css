@@ -11,14 +11,69 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 主容器 */
+/* 主容器 - 亮色模式（默认） */
 .app-container {
     min-height: 100vh;
-    width: 100vw; /* 视口宽度 */
+    width: 100vw;
     display: flex;
     flex-direction: column;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    transition: background 0.3s ease;
+}
+
+/* 暗色模式 */
+.dark-mode .app-container {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+/* 暗色模式下的文字 */
+.dark-mode {
+    color: #e0e0e0;
+}
+
+/* 暗色模式下的卡片背景调整 */
+.dark-mode .feature-card,
+.dark-mode .project-card,
+.dark-mode .team-card,
+.dark-mode .focus-item,
+.dark-mode .page-content {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 暗色模式下的悬停效果 */
+.dark-mode .feature-card:hover,
+.dark-mode .project-card:hover,
+.dark-mode .team-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* 暗色模式下的导航栏 */
+.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 暗色模式下的导航链接 */
+.dark-mode .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+    color: white;
+}
+
+/* 暗色模式下的Header */
+.dark-mode .header {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* 暗色模式下的Footer */
+.dark-mode .footer {
+    background: rgba(0, 0, 0, 0.3);
 }

@@ -88,3 +88,17 @@
         padding: 0.4rem 0.8rem;
     }
 }
+
+/* 导航栏右侧操作区域 */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .navbar-actions {
+        margin-top: 1rem;
+    }
+}

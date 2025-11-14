@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 import './Navbar.css'
 
 function Navbar() {
@@ -51,6 +52,10 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
+
+                <div className="navbar-actions">
+                    <ThemeToggle />
+                </div>
             </div>
         </nav>
     )
