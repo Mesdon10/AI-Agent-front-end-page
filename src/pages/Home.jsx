@@ -1,43 +1,43 @@
+import { useTranslation } from 'react-i18next'
 import Header from '../components/Header'
 import FeatureCard from '../components/FeatureCard'
 import '../styles/Home.css'
 
 function Home() {
+    const { t } = useTranslation()
+
     return (
         <>
             <Header />
 
             <main className="main-content">
                 <section className="intro-section">
-                    <h2>About Our Research</h2>
-                    <p>
-                        We are dedicated to advancing the field of AI agents through
-                        innovative research and practical applications.
-                    </p>
+                    <h2>{t('home.aboutTitle')}</h2>
+                    <p>{t('home.aboutDesc')}</p>
                 </section>
 
                 <section className="features-section">
-                    <h2>Research Areas</h2>
+                    <h2>{t('home.researchAreasTitle')}</h2>
                     <div className="feature-grid">
                         <FeatureCard
                             icon="🧠"
-                            title="Multi-Agent Systems"
-                            description="Exploring collaboration between AI agents"
+                            title={t('home.multiAgent.title')}
+                            description={t('home.multiAgent.desc')}
                         />
                         <FeatureCard
                             icon="🎯"
-                            title="Decision Making"
-                            description="Advanced algorithms for intelligent decisions"
+                            title={t('home.decisionMaking.title')}
+                            description={t('home.decisionMaking.desc')}
                         />
                         <FeatureCard
                             icon="🔬"
-                            title="Applied Research"
-                            description="Real-world applications and solutions"
+                            title={t('home.appliedResearch.title')}
+                            description={t('home.appliedResearch.desc')}
                         />
                         <FeatureCard
                             icon="🚀"
-                            title="Innovation Lab"
-                            description="Pushing the boundaries of AI technology"
+                            title={t('home.innovationLab.title')}
+                            description={t('home.innovationLab.desc')}
                         />
                     </div>
                 </section>

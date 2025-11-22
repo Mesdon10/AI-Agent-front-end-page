@@ -1,35 +1,38 @@
+import { useTranslation } from 'react-i18next'
 import '../styles/Page.css'
 
 function Projects() {
+    const { t } = useTranslation()
+
     const projects = [
         {
             id: 1,
-            title: "Multi-Agent Coordination Platform",
-            description: "A framework for enabling seamless communication between multiple AI agents.",
-            status: "Active",
-            year: "2024-2025"
+            titleKey: 'projects.project1.title',
+            descKey: 'projects.project1.desc',
+            statusKey: 'projects.project1.status',
+            yearKey: 'projects.project1.year'
         },
         {
             id: 2,
-            title: "Intelligent Decision Support System",
-            description: "AI-powered system for complex decision-making in uncertain environments.",
-            status: "Active",
-            year: "2024"
+            titleKey: 'projects.project2.title',
+            descKey: 'projects.project2.desc',
+            statusKey: 'projects.project2.status',
+            yearKey: 'projects.project2.year'
         },
         {
             id: 3,
-            title: "Adaptive Learning Agents",
-            description: "Self-improving AI agents that learn from experience and adapt to new situations.",
-            status: "Completed",
-            year: "2023"
+            titleKey: 'projects.project3.title',
+            descKey: 'projects.project3.desc',
+            statusKey: 'projects.project3.status',
+            yearKey: 'projects.project3.year'
         }
     ]
 
     return (
         <div className="page-container">
             <div className="page-header">
-                <h1>Our Projects</h1>
-                <p>Explore our ongoing and completed research projects</p>
+                <h1>{t('projects.title')}</h1>
+                <p>{t('projects.subtitle')}</p>
             </div>
 
             <div className="page-content">
@@ -37,14 +40,14 @@ function Projects() {
                     {projects.map(project => (
                         <div key={project.id} className="project-card">
                             <div className="project-header">
-                                <h3>{project.title}</h3>
-                                <span className={`status-badge ${project.status.toLowerCase()}`}>
-                  {project.status}
+                                <h3>{t(project.titleKey)}</h3>
+                                <span className={`status-badge ${t(project.statusKey).toLowerCase().includes('active') || t(project.statusKey).includes('进行') ? 'active' : 'completed'}`}>
+                  {t(project.statusKey)}
                 </span>
                             </div>
-                            <p className="project-description">{project.description}</p>
+                            <p className="project-description">{t(project.descKey)}</p>
                             <div className="project-footer">
-                                <span className="project-year">📅 {project.year}</span>
+                                <span className="project-year">📅 {t(project.yearKey)}</span>
                             </div>
                         </div>
                     ))}

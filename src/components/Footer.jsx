@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 
 function Footer() {
+    const { t } = useTranslation()
     const currentYear = new Date().getFullYear()
 
     return (
         <footer className="footer">
-            <p>© {currentYear} AI Agent Research Group | CUHK</p>
+            <p>© {currentYear} {t('footer.copyright')}</p>
         </footer>
     )
 }

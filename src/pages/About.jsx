@@ -1,49 +1,47 @@
+import { useTranslation } from 'react-i18next'
 import '../styles/Page.css'
 
 function About() {
+    const { t } = useTranslation()
+
     return (
         <div className="page-container">
             <div className="page-header">
-                <h1>About Us</h1>
-                <p>Learn more about our research group and mission</p>
+                <h1>{t('about.title')}</h1>
+                <p>{t('about.subtitle')}</p>
             </div>
 
             <div className="page-content">
                 <section className="content-section">
-                    <h2>Our Mission</h2>
-                    <p>
-                        The AI Agent Research Group at CUHK is committed to pushing
-                        the boundaries of artificial intelligence through innovative
-                        research in autonomous agents, multi-agent systems, and
-                        intelligent decision-making.
-                    </p>
+                    <h2>{t('about.missionTitle')}</h2>
+                    <p>{t('about.missionDesc')}</p>
                 </section>
 
                 <section className="content-section">
-                    <h2>Research Focus</h2>
+                    <h2>{t('about.focusTitle')}</h2>
                     <div className="focus-grid">
                         <div className="focus-item">
-                            <h3>🎯 Autonomous Agents</h3>
-                            <p>Developing intelligent agents that can operate independently in complex environments.</p>
+                            <h3>🎯 {t('about.autonomousAgents.title')}</h3>
+                            <p>{t('about.autonomousAgents.desc')}</p>
                         </div>
                         <div className="focus-item">
-                            <h3>🤝 Collaboration</h3>
-                            <p>Understanding how multiple AI agents can work together effectively.</p>
+                            <h3>🤝 {t('about.collaboration.title')}</h3>
+                            <p>{t('about.collaboration.desc')}</p>
                         </div>
                         <div className="focus-item">
-                            <h3>💡 Innovation</h3>
-                            <p>Creating novel approaches to solve real-world challenges.</p>
+                            <h3>💡 {t('about.innovation.title')}</h3>
+                            <p>{t('about.innovation.desc')}</p>
                         </div>
                     </div>
                 </section>
 
                 <section className="content-section">
-                    <h2>Our Values</h2>
+                    <h2>{t('about.valuesTitle')}</h2>
                     <ul className="values-list">
-                        <li>🔬 <strong>Scientific Rigor</strong> - Commitment to high-quality research</li>
-                        <li>🌟 <strong>Innovation</strong> - Pushing boundaries of what's possible</li>
-                        <li>🤲 <strong>Collaboration</strong> - Working together to achieve more</li>
-                        <li>🌍 <strong>Impact</strong> - Creating solutions that matter</li>
+                        <li>🔬 <strong>{t('about.values.rigor')}</strong></li>
+                        <li>🌟 <strong>{t('about.values.innovation')}</strong></li>
+                        <li>🤲 <strong>{t('about.values.collaboration')}</strong></li>
+                        <li>🌍 <strong>{t('about.values.impact')}</strong></li>
                     </ul>
                 </section>
             </div>

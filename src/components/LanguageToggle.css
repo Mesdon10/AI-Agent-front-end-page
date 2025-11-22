@@ -1,0 +1,45 @@
+.language-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.language-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.language-toggle:active {
+    transform: translateY(0);
+}
+
+.language-text {
+    font-size: 0.85rem;
+}
+
+/* 暗色模式 */
+.dark-mode .language-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .language-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .language-toggle {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
