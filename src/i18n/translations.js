@@ -5,7 +5,8 @@ export const translations = {
             home: 'Home',
             about: 'About',
             projects: 'Projects',
-            team: 'Team'
+            team: 'Team',
+            chat: 'AI Chat'
         },
 
         // 首页
@@ -112,7 +113,8 @@ export const translations = {
             home: '首页',
             about: '关于我们',
             projects: '项目',
-            team: '团队'
+            team: '团队',
+            chat: 'AI对话'
         },
 
         // 首页
@@ -205,6 +207,25 @@ export const translations = {
             },
             joinTitle: '加入我们',
             joinDesc: '我们一直在寻找充满热情的研究人员加入我们的团队。如果你对AI智能体和智能系统感兴趣，请联系我们！'
+        },
+
+        // Chat页面
+        chat: {
+            title: 'AI助手',
+            subtitle: '与我们的智能体对话',
+            placeholder: '在此输入您的消息...',
+            send: '发送',
+            thinking: 'AI正在思考...',
+            welcomeMessage: '您好！我是您的AI研究助手。今天我能为您做些什么？',
+            quickQuestions: '快捷问题',
+            questions: {
+                q1: '你们的研究重点是什么？',
+                q2: '介绍一下多智能体系统',
+                q3: '你们正在做什么项目？',
+                q4: '如何加入你们的团队？'
+            },
+            emptyState: '通过输入消息或选择上方的快捷问题开始对话。',
+            errorMessage: '抱歉，遇到了错误。请重试。'
         },
 
         // Footer
