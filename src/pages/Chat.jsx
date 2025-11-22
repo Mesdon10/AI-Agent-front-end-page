@@ -104,7 +104,7 @@ function Chat() {
     }
 
     // 处理Enter键发送
-    const handleKeyPress = (e) => {
+    const handleKeyDown = (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault()
             handleSend()
@@ -205,7 +205,7 @@ function Chat() {
                             type="text"
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
-                            onKeyPress={handleKeyPress}
+                            onKeyDown={handleKeyDown}
                             placeholder={t('chat.placeholder')}
                             className="chat-input"
                         />
