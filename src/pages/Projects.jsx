@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
 import '../styles/Page.css'
 
 function Projects() {
@@ -29,7 +30,13 @@ function Projects() {
     ]
 
     return (
-        <div className="page-container">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="page-container"
+        >
             <div className="page-header">
                 <h1>{t('projects.title')}</h1>
                 <p>{t('projects.subtitle')}</p>
@@ -53,7 +60,7 @@ function Projects() {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

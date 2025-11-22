@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
 import '../styles/Page.css'
 
 function Team() {
@@ -32,7 +33,13 @@ function Team() {
     ]
 
     return (
-        <div className="page-container">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="page-container"
+        >
             <div className="page-header">
                 <h1>{t('team.title')}</h1>
                 <p>{t('team.subtitle')}</p>
@@ -54,7 +61,7 @@ function Team() {
                     <p>{t('team.joinDesc')}</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
