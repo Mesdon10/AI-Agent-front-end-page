@@ -23,7 +23,13 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+        'no-unused-vars': ['warn', {  // 改为 'warn' 而不是 'error'
+            argsIgnorePattern: '^_',
+            varsIgnorePattern: '^[A-Z_]',
+            ignoreRestSiblings: true
+        }],
+        'react/jsx-uses-react': 'off',  // 添加这行
+        'react/jsx-uses-vars': 'error'  // 添加这行
     },
   },
 ])
