@@ -6,7 +6,8 @@ export const translations = {
             about: 'About',
             projects: 'Projects',
             team: 'Team',
-            chat: 'AI Chat'
+            chat: 'AI Chat',
+            analytics: 'Analytics'
         },
 
         // 首页
@@ -101,6 +102,31 @@ export const translations = {
             joinDesc: 'We are always looking for passionate researchers to join our group. If you\'re interested in AI agents and intelligent systems, get in touch!'
         },
 
+        // Chat
+        chat: {
+            title: 'AI Assistant',
+            subtitle: 'Talk with our multi-agent AI',
+            placeholder: 'Input your message here...',
+            send: 'Send',
+            thinking: 'AI is thinking...',
+            welcomeMessage: 'Hello！I am your AI research assistant. What can I do for you today?',
+            quickQuestions: 'Fast Questions',
+            questions: {
+                q1: 'What\'s your research importance?',
+                q2: 'Introduce multi-agent systems.',
+                q3: 'What project are you working on?',
+                q4: 'How can I join your team?'
+            },
+            emptyState: 'Start a conversation by entering a message or selecting the quick question above.',
+            errorMessage: 'Sorry, an error occurred. Please try again.'
+        },
+
+        // Analytics
+        analytics: {
+            title: 'Bio-Med AI Agent Analytics Dashboard',
+            description: 'Monitoring underlying computational performance and high-dimensional clustering states of pathological features for Bio-Med AI agents.'
+        },
+
         // Footer
         footer: {
             copyright: 'AI Agent Research Group | CUHK'
@@ -114,7 +140,8 @@ export const translations = {
             about: '关于我们',
             projects: '项目',
             team: '团队',
-            chat: 'AI对话'
+            chat: 'AI对话',
+            analytics: '数据看板'
         },
 
         // 首页
@@ -226,6 +253,11 @@ export const translations = {
             },
             emptyState: '通过输入消息或选择上方的快捷问题开始对话。',
             errorMessage: '抱歉，遇到了错误。请重试。'
+        },
+
+        analytics: {
+            title: '生物医学 AI 智能体数据看板',
+            description: '监控生物医学 AI 智能体的底层算力性能，以及病理特征的高维聚类状态。'
         },
 
         // Footer

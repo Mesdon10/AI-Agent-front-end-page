@@ -61,6 +61,14 @@ function Navbar() {
                             {t('nav.chat')}
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            to="/analytics"
+                            className={isActive('/analytics') ? 'nav-link active' : 'nav-link'}
+                        >
+                            {t('nav.analytics')}
+                        </Link>
+                    </li>
                 </ul>
 
                 <div className="navbar-actions">

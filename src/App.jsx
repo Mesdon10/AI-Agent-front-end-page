@@ -7,6 +7,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Team from './pages/Team'
 import Chat from './pages/Chat'
+import Analytics from './pages/Analytics'
 import './App.css'
 
 // 创建一个新组件来包装路由
@@ -21,6 +22,7 @@ function AnimatedRoutes() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/chat" element={<Chat />} />
+                <Route path="/analytics" element={<Analytics />} />
             </Routes>
         </AnimatePresence>
     )
